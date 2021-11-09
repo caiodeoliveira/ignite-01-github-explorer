@@ -1,0 +1,54 @@
+	Dicas de produtividade e sugestões interessantes: https://www.notion.so/Desafio-00-Planejando-meus-estudos-144233a0c6114bdcafbefc85fe54ef28
+
+
+
+Configuração de Ambiente.
+
+https://www.notion.so/Instalando-e-configurando-o-VSCode-c26cc9f80edf4f3486b9756573038dbb
+
+
+
+As coisas mais importantes no nosso package.json são as dependencias, como por exemplo as bibliotecas.
+
+
+A pasta node_modules vai estar sempre presente em projetos todos os javascript, ela armazena os códigos das dependências que instalamos em nossa aplicação.
+
+
+
+react-dom -> É o html convertido numa sintaxe de objeto javascript. Ela permite que o React se comunique com a árvore de elementos html.
+
+
+Aula 3 - Configurando o Babel:
+
+O Babel converte o código que escrevemos nas atuais versões do Javascript e converte para uma versão antiga que tenha suporte e sejam interpretada por todos os navegadores.
+
+
+
+Aula 4 - Configurando o Webpack:
+
+O Webpack nos permite fazer import de arquivos CSS, arquivos jpg, png, svg e outros tipos de arquivos também.
+
+
+Ele quem traduz ou converte alguns arquivos para quem o browser entenda, ex.: arquivos .sass ele converte para .css .
+
+instalar webpack -> Yarn add webpack
+
+
+Aula 5 - Estrutura do ReactJS:
+
+A Lib React-dom possui uma função chamada render que recebe dois parâmetros, o primeiro parâmetro é o que queremos renderizar, e o segundo parâmetro indica dentro de qual elemento queremos renderizar essa informação.
+
+ex.: render(<h1></h1>, document.getElementById('root'))
+
+
+Aula 9 - Ambiente dev e produção:
+
+Variáveis de ambiente --> Servem para configurar alguma coisa de acordo com o ambiente, seja ambiente de desenvolvimento ou ambiente de produção.
+
+
+
+const isDevelopment = process.env.NODE_ENV !== "production";
+
+module.exports = {
+  mode: isDevelopment ? "development" : "production",
+  devtool: isDevelopment ? "eval-source-map" : "source-map",
