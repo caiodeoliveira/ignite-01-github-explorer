@@ -1,9 +1,8 @@
 import React from 'react';
-import './styles/global.css';
+import './styles/global.scss';
 
 
 function App() {
-  throw new Error('eita Giovana o forninho caiu!')
   return <h1>Hello Brazil</h1>;
 }
 

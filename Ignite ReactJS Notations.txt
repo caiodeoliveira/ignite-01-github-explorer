@@ -52,3 +52,18 @@ Aula 10 - Importando arquivos CSS:
 
 yarn add style-loader e css-loader -D
 para instalar poder configurar o webpack e permitir que a gente consiga importar arquivos css em nosso app.jsx
+
+Aula 11 - Instalando e configurando o sass:
+
+yarn add node-sass para instalar a lib sass.
+
+yarn add sass-loader -D para instalar a dependencia sass e configurar o webpack para converter o sass em css.
+
+Temos as extensões sass(Esta não utiliza chaves no código de estilização) e scss.
+
+Trocamos a extensão do arquivo global.css --> global.scss e mudamos também no import para .scss  .
+
+
+***yarn remove*** esse comando seguido do nome da lib, remove a biblioteca do projeto(package.json).
+
+sass --> É um pre-processador css, algo bem interessante no sass é sua sintaxe de encadeamento que permite uma leitura legível do código de estilização.
