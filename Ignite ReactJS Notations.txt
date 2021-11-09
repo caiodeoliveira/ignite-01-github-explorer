@@ -45,10 +45,10 @@ Aula 9 - Ambiente dev e produção:
 
 Variáveis de ambiente --> Servem para configurar alguma coisa de acordo com o ambiente, seja ambiente de desenvolvimento ou ambiente de produção.
 
+Foi Instalado e configurado, o cross-env para utilizar as variáveis de ambiente no ambiente de dev ou produção com o windows.
 
 
-const isDevelopment = process.env.NODE_ENV !== "production";
+Aula 10 - Importando arquivos CSS:
 
-module.exports = {
-  mode: isDevelopment ? "development" : "production",
-  devtool: isDevelopment ? "eval-source-map" : "source-map",
+yarn add style-loader e css-loader -D
+para instalar poder configurar o webpack e permitir que a gente consiga importar arquivos css em nosso app.jsx

@@ -1,4 +1,6 @@
 import React from 'react';
+import './styles/global.css';
+
 
 function App() {
   throw new Error('eita Giovana o forninho caiu!')
