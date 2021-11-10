@@ -18,8 +18,8 @@ module.exports = {
   devServer: {
     static: {
       directory: path.join(__dirname, "public"),
-      hot: true,
     },
+    hot: true,
   },
   plugins: [
     isDevelopment && new ReactRefreshWebpackPlugin(),
@@ -32,7 +32,14 @@ module.exports = {
       {
         test: /\.jsx$/,
         exclude: /node_modules/,
-        use: "babel-loader",
+        use: {
+          loader: "babel-loader",
+          options: {
+            plugins: [
+              isDevelopment && require.resolve("react-refresh/babel"),
+            ].filter(Boolean),
+          },
+        },
       },
       {
         test: /\.scss$/,

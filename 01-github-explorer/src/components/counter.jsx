@@ -11,7 +11,7 @@ function Counter() {
     <>
       <h2>{counter}</h2>
       <button type="button" onClick={increment}>
-        Increment + 1
+        Increment
       </button>
     </>
   );
